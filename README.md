@@ -1,6 +1,7 @@
 # chat_gpt_app
 
-A new Flutter project.
+<ul><li>A new Flutter project.</li>
+<li>Integrating ChatGPT to Flutter application.</li></ul> 
 
 ## Getting Started
 
