@@ -1,4 +1,4 @@
-# chat_gpt_app
+# chat_gpt_mobile_app
 
 <ul><li>A new Flutter project.</li>
 <li>Integrating ChatGPT to Flutter application.</li>
