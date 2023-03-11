@@ -13,7 +13,13 @@ class ChatScreen extends StatefulWidget {
 class _ChatScreenState extends State<ChatScreen> {
   Widget _buildTextComposer() {
     return Row(
-      children: const [],
+      children: [
+        const Expanded(
+          child: TextField(
+            decoration: InputDecoration.collapsed(hintText: "Send a message"),
+          ),
+        )
+      ],
     );
   }
 
