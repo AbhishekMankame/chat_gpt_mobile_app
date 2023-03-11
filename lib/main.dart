@@ -1,3 +1,4 @@
+import 'package:chat_gpt_app/chat_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.green,
         useMaterial3: true,
       ),
-      home: Container(),
+      home: const ChatScreen(),
     );
   }
 }
