@@ -1,6 +1,8 @@
-# chat_gpt_app
+# chat_gpt_mobile_app
 
-A new Flutter project.
+<ul><li>A new flutter project.</li>
+<li>Integrating ChatGPT to Flutter application.</li>
+  <li>Using the chatGPT api.</li></ul> 
 
 ## Getting Started
 
