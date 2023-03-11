@@ -20,7 +20,7 @@ class _ChatScreenState extends State<ChatScreen> {
   final List<ChatMessage> _messages = [];
   ChatGPT? chatGPT;
 
-  StreamSubscription? _streamSubscription;
+  StreamSubscription? _subscription;
 
   void _sendMessage() {
     ChatMessage _message = ChatMessage(text: _controller.text, sender: "user");
