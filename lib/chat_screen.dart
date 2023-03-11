@@ -25,10 +25,12 @@ class _ChatScreenState extends State<ChatScreen> {
   @override
   void initState() {
     super.initState();
+    chatGPT = ChatGPT.instance;
   }
 
   @override
   void dispose() {
+    _subscription?.cancel();
     super.dispose();
   }
 
