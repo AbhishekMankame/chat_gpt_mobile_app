@@ -20,22 +20,14 @@ class ChatMessage extends StatelessWidget {
             .subtitle1(context)
             .make()
             .box
-            .red200
+            .color(sender == "user" ? Vx.red200 : Vx.green200)
             .p16
             .rounded
             .alignCenter
             .makeCentered(),
         Expanded(
-            child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(sender, style: Theme.of(context).textTheme.subtitle1),
-            Container(
-              margin: const EdgeInsets.only(top: 5.0),
-              child: Text(text),
-            ),
-          ],
-        )),
+          child: text.text.make(),
+        ),
       ],
     );
   }
