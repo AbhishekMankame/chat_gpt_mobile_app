@@ -22,6 +22,8 @@ class _ChatScreenState extends State<ChatScreen> {
 
   StreamSubscription? _subscription;
 
+  bool _isTyping = false;
+
   @override
   void initState() {
     super.initState();
@@ -39,6 +41,7 @@ class _ChatScreenState extends State<ChatScreen> {
 
     setState(() {
       _messages.insert(0, _message);
+      _isTyping = true;
     });
 
     _controller.clear();
