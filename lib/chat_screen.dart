@@ -32,12 +32,13 @@ class _ChatScreenState extends State<ChatScreen> {
         Expanded(
           child: TextField(
             controller: _controller,
+            onSubmitted: (value) => _sendMessage(),
             decoration: InputDecoration.collapsed(hintText: "Send a message"),
           ),
         ),
         IconButton(
           icon: const Icon(Icons.send),
-          onPressed: () {},
+          onPressed: () => _sendMessage(),
         ),
       ],
     ).px16();
