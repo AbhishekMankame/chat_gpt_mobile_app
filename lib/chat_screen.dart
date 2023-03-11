@@ -22,6 +22,8 @@ class _ChatScreenState extends State<ChatScreen> {
     setState(() {
       _messages.insert(0, _message);
     });
+
+    _controller.clear();
   }
 
   Widget _buildTextComposer() {
