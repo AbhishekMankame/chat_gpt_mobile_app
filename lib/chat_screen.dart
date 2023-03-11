@@ -11,6 +11,9 @@ class ChatScreen extends StatefulWidget {
 }
 
 class _ChatScreenState extends State<ChatScreen> {
+
+  Widget _buildTextComposer()
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -18,6 +21,7 @@ class _ChatScreenState extends State<ChatScreen> {
       body: Column(children: [
         Container(
           decoration: BoxDecoration(color: context.cardColor),
+          child: _buildTextComposer(),
         )
       ]),
     );
