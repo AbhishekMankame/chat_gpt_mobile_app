@@ -35,6 +35,10 @@ class _ChatScreenState extends State<ChatScreen> {
     return Scaffold(
       appBar: AppBar(title: const Text("ChatGPT Demo")),
       body: Column(children: [
+        Flexible(
+            child: Container(
+          height: context.screenHeight,
+        )),
         Container(
           decoration: BoxDecoration(color: context.cardColor),
           child: _buildTextComposer(),
