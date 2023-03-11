@@ -36,10 +36,12 @@ class _ChatScreenState extends State<ChatScreen> {
       appBar: AppBar(title: const Text("ChatGPT Demo")),
       body: SafeArea(
         child: Column(children: [
-          Flexible(child: ListView.builder(
+          Flexible(
+              child: ListView.builder(
+            itemCount: 50,
             itemBuilder: (context, index) {
               return Container(
-                height: 100,
+                height: 50,
                 color: Colors.red,
               );
             },
