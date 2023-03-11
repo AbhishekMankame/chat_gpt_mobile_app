@@ -18,6 +18,10 @@ class _ChatScreenState extends State<ChatScreen> {
 
   void _sendMessage() {
     ChatMessage _message = ChatMessage(text: _controller.text, sender: "user");
+
+    setState(() {
+      _messages.insert(0, _message);
+    });
   }
 
   Widget _buildTextComposer() {
