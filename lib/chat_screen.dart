@@ -43,7 +43,7 @@ class _ChatScreenState extends State<ChatScreen> {
               return Container(
                 height: 50,
                 color: Colors.red,
-              );
+              ).p16();
             },
           )),
           Container(
