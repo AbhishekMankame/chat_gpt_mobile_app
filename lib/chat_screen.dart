@@ -22,6 +22,16 @@ class _ChatScreenState extends State<ChatScreen> {
 
   StreamSubscription? _subscription;
 
+  @override
+  void initState() {
+    super.initState();
+  }
+
+  @override
+  void dispose() {
+    super.dispose();
+  }
+
   void _sendMessage() {
     ChatMessage _message = ChatMessage(text: _controller.text, sender: "user");
 
