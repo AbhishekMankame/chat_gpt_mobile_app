@@ -52,7 +52,7 @@ class _ChatScreenState extends State<ChatScreen> {
         .onCompleteStream(request: request)
         .listen((response) {
       ChatMessage botMessage = ChatMessage(
-          text: response.choices[0].text, sender: "bot", isBot: true);
+          text: response!.choices[0].text, sender: "bot", isBot: true);
     });
   }
 
