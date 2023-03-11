@@ -39,6 +39,7 @@ dependencies:
   chat_gpt_sdk: ^2.0.0
   #chat_gpt_sdk:
   velocity_x: ^3.6.0
+  flutter_dotenv: ^5.0.2
 dev_dependencies:
   flutter_test:
     sdk: flutter
