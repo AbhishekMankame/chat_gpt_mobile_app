@@ -51,8 +51,8 @@ class _ChatScreenState extends State<ChatScreen> {
             orgId: "")
         .onCompleteStream(request: request)
         .listen((response) {
-      ChatMessage botMessage = ChatMessage(
-          text: response!.choices[0].text, sender: "bot", isBot: true);
+      ChatMessage botMessage =
+          ChatMessage(text: response!.choices[0].text, sender: "bot");
     });
   }
 
