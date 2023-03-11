@@ -45,6 +45,12 @@ class _ChatScreenState extends State<ChatScreen> {
 
     final request = CompleteReq(
         prompt: message.text, model: kTranslateModelV3, max_tokens: 200);
+
+    _subscription = chatGPT!
+        .builder("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",
+            orgId: "")
+        .onCompleteStream(request: request)
+        .listen((event) {});
   }
 
   Widget _buildTextComposer() {
