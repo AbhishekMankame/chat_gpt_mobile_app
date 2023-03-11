@@ -24,7 +24,7 @@ class _ChatScreenState extends State<ChatScreen> {
           onPressed: () {},
         ),
       ],
-    );
+    ).px16();
   }
 
   @override
