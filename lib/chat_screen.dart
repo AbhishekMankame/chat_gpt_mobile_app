@@ -1,5 +1,6 @@
 import "package:flutter/material.dart";
 import 'package:velocity_x/velocity_x.dart';
+import 'package:chat_gpt_sdk/chat_gpt_sdk.dart';
 
 import 'package:flutter/material.dart';
 
@@ -15,6 +16,7 @@ class ChatScreen extends StatefulWidget {
 class _ChatScreenState extends State<ChatScreen> {
   final TextEditingController _controller = TextEditingController();
   final List<ChatMessage> _messages = [];
+  ChatGPT? chatGPT;
 
   void _sendMessage() {
     ChatMessage _message = ChatMessage(text: _controller.text, sender: "user");
