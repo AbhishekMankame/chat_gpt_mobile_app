@@ -11,8 +11,11 @@ class ChatScreen extends StatefulWidget {
 }
 
 class _ChatScreenState extends State<ChatScreen> {
-
-  Widget _buildTextComposer()
+  Widget _buildTextComposer() {
+    return Row(
+      children: const [],
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
