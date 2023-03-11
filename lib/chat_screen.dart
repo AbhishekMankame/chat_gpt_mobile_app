@@ -11,11 +11,14 @@ class ChatScreen extends StatefulWidget {
 }
 
 class _ChatScreenState extends State<ChatScreen> {
+  final TextEditingController _controller = TextEditingController();
+
   Widget _buildTextComposer() {
     return Row(
       children: [
-        const Expanded(
+        Expanded(
           child: TextField(
+            controller: _controller,
             decoration: InputDecoration.collapsed(hintText: "Send a message"),
           ),
         ),
