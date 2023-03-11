@@ -51,6 +51,7 @@ class _ChatScreenState extends State<ChatScreen> {
             orgId: "")
         .onCompleteStream(request: request)
         .listen((response) {
+      Vx.log(response!.choices[0].text);
       ChatMessage botMessage =
           ChatMessage(text: response!.choices[0].text, sender: "bot");
 
