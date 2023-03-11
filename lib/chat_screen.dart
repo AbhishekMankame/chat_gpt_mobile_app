@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import "package:flutter/material.dart";
 import 'package:velocity_x/velocity_x.dart';
 import 'package:chat_gpt_sdk/chat_gpt_sdk.dart';
@@ -17,6 +19,8 @@ class _ChatScreenState extends State<ChatScreen> {
   final TextEditingController _controller = TextEditingController();
   final List<ChatMessage> _messages = [];
   ChatGPT? chatGPT;
+
+  StreamSubscription? _streamSubscription;
 
   void _sendMessage() {
     ChatMessage _message = ChatMessage(text: _controller.text, sender: "user");
