@@ -42,6 +42,9 @@ class _ChatScreenState extends State<ChatScreen> {
     });
 
     _controller.clear();
+
+    final request = CompleteReq(
+        prompt: message.text, model: kTranslateModelV3, max_tokens: 200);
   }
 
   Widget _buildTextComposer() {
