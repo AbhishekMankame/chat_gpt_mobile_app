@@ -53,6 +53,10 @@ class _ChatScreenState extends State<ChatScreen> {
         .listen((response) {
       ChatMessage botMessage =
           ChatMessage(text: response!.choices[0].text, sender: "bot");
+
+      setState(() {
+        _messages.insert(0, botMessage);
+      });
     });
   }
 
