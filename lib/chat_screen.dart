@@ -41,10 +41,7 @@ class _ChatScreenState extends State<ChatScreen> {
               child: ListView.builder(
             itemCount: _messages.length,
             itemBuilder: (context, index) {
-              return Container(
-                height: 50,
-                color: Colors.red,
-              ).p16();
+              return _messages[index];
             },
           )),
           Container(
