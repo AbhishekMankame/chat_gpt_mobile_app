@@ -50,7 +50,10 @@ class _ChatScreenState extends State<ChatScreen> {
         .builder("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",
             orgId: "")
         .onCompleteStream(request: request)
-        .listen((response) {});
+        .listen((response) {
+      ChatMessage botMessage = ChatMessage(
+          text: response.choices[0].text, sender: "bot", isBot: true);
+    });
   }
 
   Widget _buildTextComposer() {
