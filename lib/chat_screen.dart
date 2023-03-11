@@ -16,6 +16,10 @@ class _ChatScreenState extends State<ChatScreen> {
   final TextEditingController _controller = TextEditingController();
   final List<ChatMessage> _messages = [];
 
+  void _sendMessage() {
+    ChatMessage _message = ChatMessage(text: _controller.text, sender: "user");
+  }
+
   Widget _buildTextComposer() {
     return Row(
       children: [
