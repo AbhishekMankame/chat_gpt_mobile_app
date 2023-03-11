@@ -3,6 +3,8 @@ import 'package:velocity_x/velocity_x.dart';
 
 import 'package:flutter/material.dart';
 
+import 'chatmessage.dart';
+
 class ChatScreen extends StatefulWidget {
   const ChatScreen({super.key});
 
