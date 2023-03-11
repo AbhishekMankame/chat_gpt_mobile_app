@@ -23,14 +23,11 @@ class ChatMessage extends StatelessWidget {
             child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              sender,
-              style: Theme.of(context).textTheme.subtitle1),
-              Container(
-                margin: const EdgeInsets.only(top: 5.0),
-                child: Text(text),
-              ),
-            )
+            Text(sender, style: Theme.of(context).textTheme.subtitle1),
+            Container(
+              margin: const EdgeInsets.only(top: 5.0),
+              child: Text(text),
+            ),
           ],
         )),
       ],
