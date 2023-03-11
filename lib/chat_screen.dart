@@ -40,6 +40,7 @@ class _ChatScreenState extends State<ChatScreen> {
             itemBuilder: (context, index) {
               return Container(
                 height: 100,
+                color: Colors.red,
               );
             },
           )),
