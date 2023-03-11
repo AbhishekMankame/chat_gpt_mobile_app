@@ -59,6 +59,7 @@ class _ChatScreenState extends State<ChatScreen> {
           ChatMessage(text: response!.choices[0].text, sender: "bot");
 
       setState(() {
+        _isTyping = false;
         _messages.insert(0, botMessage);
       });
     });
@@ -97,6 +98,7 @@ class _ChatScreenState extends State<ChatScreen> {
               return _messages[index];
             },
           )),
+          const Divider(height: 1.0,)
           Container(
             decoration: BoxDecoration(color: context.cardColor),
             child: _buildTextComposer(),
