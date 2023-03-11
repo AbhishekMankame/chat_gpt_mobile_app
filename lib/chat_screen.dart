@@ -18,7 +18,11 @@ class _ChatScreenState extends State<ChatScreen> {
           child: TextField(
             decoration: InputDecoration.collapsed(hintText: "Send a message"),
           ),
-        )
+        ),
+        IconButton(
+          icon: const Icon(Icons.send),
+          onPressed: () {},
+        ),
       ],
     );
   }
