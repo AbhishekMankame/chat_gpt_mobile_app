@@ -15,7 +15,16 @@ class ChatMessage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Text(sender).text.make(),
+        Text(sender)
+            .text
+            .subtitle1(context)
+            .make()
+            .box
+            .red200
+            .p16
+            .rounded
+            .alignCenter
+            .makeCentered(),
         Expanded(
             child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
