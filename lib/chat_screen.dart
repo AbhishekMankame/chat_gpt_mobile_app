@@ -39,7 +39,7 @@ class _ChatScreenState extends State<ChatScreen> {
         child: Column(children: [
           Flexible(
               child: ListView.builder(
-            itemCount: _messages,
+            itemCount: _messages.length,
             itemBuilder: (context, index) {
               return Container(
                 height: 50,
