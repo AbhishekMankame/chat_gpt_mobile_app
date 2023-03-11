@@ -98,6 +98,7 @@ class _ChatScreenState extends State<ChatScreen> {
               return _messages[index];
             },
           )),
+          if(_isTyping) ThreeDots(),
           const Divider(height: 1.0,)
           Container(
             decoration: BoxDecoration(color: context.cardColor),
