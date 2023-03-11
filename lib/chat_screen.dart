@@ -12,6 +12,7 @@ class ChatScreen extends StatefulWidget {
 
 class _ChatScreenState extends State<ChatScreen> {
   final TextEditingController _controller = TextEditingController();
+  final List<ChatMessage> _messages = [];
 
   Widget _buildTextComposer() {
     return Row(
@@ -38,7 +39,7 @@ class _ChatScreenState extends State<ChatScreen> {
         child: Column(children: [
           Flexible(
               child: ListView.builder(
-            itemCount: 50,
+            itemCount: _messages,
             itemBuilder: (context, index) {
               return Container(
                 height: 50,
