@@ -26,7 +26,7 @@ class ChatMessage extends StatelessWidget {
             .alignCenter
             .makeCentered(),
         Expanded(
-          child: text.trim().text.make(),
+          child: text.trim().text.bodyText1(context).make(),
         ),
       ],
     );
