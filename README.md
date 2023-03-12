@@ -1,4 +1,5 @@
 # chat_gpt_mobile_app
+## Project is currently under development
 
 <ul><li>A new flutter project.</li>
 <li>Integrating ChatGPT to Flutter application.</li>
